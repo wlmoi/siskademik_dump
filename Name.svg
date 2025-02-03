@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Digital by H.Neemann -->
+<!-- created: Thu Dec 05 14:11:14 WIB 2024 -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="117.6mm"
+   height="121.5mm"
+   viewBox="-392 -418 784 810">
+<g stroke-linecap="square">
+<circle cx="0.0" cy="-300.0" r="90.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<circle cx="-106.06602" cy="-406.066" r="10.0" stroke="#000000" stroke-width="4.0" fill="#000000" />
+<path d="M -96.16652,-396.1665 Q -81.317276,-381.31726 -66.46803,-366.46802" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M -84.852806,-376.36752 L -65.05382,-365.0538 L -76.36753,-384.8528" stroke="#808080" stroke-width="2.0" fill="none"/>
+<text text-anchor="middle" x="0.0" y="-315.0" fill="#000000" style="font-size:24px">0</text>
+<text text-anchor="middle" x="0.0" y="-291.0" fill="#000000" style="font-size:24px">IDLE</text>
+<circle cx="300.0" cy="0.0" r="90.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="300.0" y="-15.0" fill="#000000" style="font-size:24px">1</text>
+<text text-anchor="middle" x="300.0" y="9.0" fill="#000000" style="font-size:24px">START</text>
+<circle cx="0.0" cy="300.0" r="90.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="0.0" y="285.0" fill="#000000" style="font-size:24px">2</text>
+<text text-anchor="middle" x="0.0" y="309.0" fill="#000000" style="font-size:24px">CALCULATE</text>
+<circle cx="-300.0" cy="0.0" r="90.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="-300.0" y="-15.0" fill="#000000" style="font-size:24px">3</text>
+<text text-anchor="middle" x="-300.0" y="9.0" fill="#000000" style="font-size:24px">OUTPUT</text>
+<path d="M 81.35118,-252.90451 Q 179.0918,-177.72534 251.90247,-83.08206" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 234.95184,-95.27536 L 253.12198,-81.49688 L 244.46295,-102.59241" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 252.90451,81.35118 Q 177.72534,179.0918 83.08206,251.90247" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 95.27536,234.95184 L 81.49688,253.12198 L 102.59241,244.46295" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M -81.35185,252.90567 Q -179.09346,177.72702 -251.90366,83.08275" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M -234.95314,95.276184 L -253.12315,81.49756 L -244.46428,102.593155" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M -252.90565,-81.35184 Q -177.727,-179.09346 -83.082726,-251.90366" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M -95.27616,-234.95314 L -81.497536,-253.12315 L -102.59313,-244.46428" stroke="#808080" stroke-width="2.0" fill="none"/>
+</g>
+</svg>
