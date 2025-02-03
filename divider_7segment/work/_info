@@ -1,0 +1,562 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/MODELSIM
+Ebcd_2digits
+Z0 w1731464734
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 180
+Z3 dC:/Users/62822/OneDrive/Documents/divider_7segment
+Z4 8C:/Users/62822/OneDrive/Documents/divider_7segment/BCD_2digits.vhd
+Z5 FC:/Users/62822/OneDrive/Documents/divider_7segment/BCD_2digits.vhd
+l0
+L19 1
+ViFg=:QPA]6=zlj:<a;IPj0
+!s100 ISi@7hTJj<ZK`V8m=Hmfm3
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1731465698
+!i10b 1
+Z8 !s108 1731465698.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/62822/OneDrive/Documents/divider_7segment/BCD_2digits.vhd|
+Z10 !s107 C:/Users/62822/OneDrive/Documents/divider_7segment/BCD_2digits.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Artl
+R1
+R2
+DEx4 work 11 bcd_2digits 0 22 iFg=:QPA]6=zlj:<a;IPj0
+!i122 180
+l30
+L29 19
+VzNlT?H0UW?^IHnh7h<2Pm1
+!s100 M>^:<]e^WFb_`D:kmQIJ83
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ebcd_to_7segment
+Z13 w1731464592
+R1
+R2
+!i122 181
+R3
+Z14 8C:/Users/62822/OneDrive/Documents/divider_7segment/BCD_to_7Segment.vhd
+Z15 FC:/Users/62822/OneDrive/Documents/divider_7segment/BCD_to_7Segment.vhd
+l0
+L13 1
+V]Lbz1ocQ^7EXWGVj>G?T00
+!s100 OZWYmT3ZHN9iLdE0aXkdZ3
+R6
+32
+Z16 !s110 1731465699
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/62822/OneDrive/Documents/divider_7segment/BCD_to_7Segment.vhd|
+Z18 !s107 C:/Users/62822/OneDrive/Documents/divider_7segment/BCD_to_7Segment.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+Z19 DEx4 work 15 bcd_to_7segment 0 22 ]Lbz1ocQ^7EXWGVj>G?T00
+!i122 181
+l28
+Z20 L27 19
+Z21 V<KkS4Y=SolZYYT<kK1RN`3
+Z22 !s100 dT8V0VncNm]^1FlZ_bXE_0
+R6
+32
+R16
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
+Eclock_divider
+Z23 w1731458838
+Z24 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 170
+R3
+Z25 8C:/Users/62822/OneDrive/Documents/divider_7segment/clock_divider.vhd
+Z26 FC:/Users/62822/OneDrive/Documents/divider_7segment/clock_divider.vhd
+l0
+L8 1
+VlFAi9D`0c]YAnQc9kXW7D1
+!s100 ICFh>MCEO_?RNK@o:@mgJ3
+R6
+32
+Z27 !s110 1731465695
+!i10b 1
+Z28 !s108 1731465695.000000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/62822/OneDrive/Documents/divider_7segment/clock_divider.vhd|
+Z30 !s107 C:/Users/62822/OneDrive/Documents/divider_7segment/clock_divider.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R24
+R1
+R2
+DEx4 work 13 clock_divider 0 22 lFAi9D`0c]YAnQc9kXW7D1
+!i122 170
+l21
+L17 18
+VU]?d9=oM_m>LmWQZ4nj7>0
+!s100 5io4ZhiJO2?7O2gl0M@WF0
+R6
+32
+R27
+!i10b 1
+R28
+R29
+R30
+!i113 1
+R11
+R12
+Ecomparator_less_4bit
+Z31 w1731429229
+R24
+R1
+R2
+!i122 171
+R3
+Z32 8C:/Users/62822/OneDrive/Documents/divider_7segment/comparator_less_4bit.vhd
+Z33 FC:/Users/62822/OneDrive/Documents/divider_7segment/comparator_less_4bit.vhd
+l0
+Z34 L20 1
+VbBNVMK[P[L3Cc5=4E7H5>3
+!s100 QiUPL4j=9iN8U^O7=]3>_3
+R6
+32
+Z35 !s110 1731465696
+!i10b 1
+Z36 !s108 1731465696.000000
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/62822/OneDrive/Documents/divider_7segment/comparator_less_4bit.vhd|
+Z38 !s107 C:/Users/62822/OneDrive/Documents/divider_7segment/comparator_less_4bit.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R24
+R1
+R2
+DEx4 work 20 comparator_less_4bit 0 22 bBNVMK[P[L3Cc5=4E7H5>3
+!i122 171
+l31
+Z39 L30 4
+VR^l>`I6mBnh^XkRiF^4fL0
+!s100 6GD[jf_:Q1l1;iWF=<J=_1
+R6
+32
+R35
+!i10b 1
+R36
+R37
+R38
+!i113 1
+R11
+R12
+Ecounter_4bit
+R31
+R24
+R1
+R2
+!i122 172
+R3
+Z40 8C:/Users/62822/OneDrive/Documents/divider_7segment/counter_4bit.vhd
+Z41 FC:/Users/62822/OneDrive/Documents/divider_7segment/counter_4bit.vhd
+l0
+Z42 L22 1
+V6WSHA7Ca^UOEKQJ@MXiXI0
+!s100 8a<fLhOJDjdi`1m[?WT;I0
+R6
+32
+R35
+!i10b 1
+R36
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/62822/OneDrive/Documents/divider_7segment/counter_4bit.vhd|
+Z44 !s107 C:/Users/62822/OneDrive/Documents/divider_7segment/counter_4bit.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R24
+R1
+R2
+DEx4 work 12 counter_4bit 0 22 6WSHA7Ca^UOEKQJ@MXiXI0
+!i122 172
+l35
+L32 19
+V=me51S0n`_43_KT1=Mg<L3
+!s100 =?Uj`_AV7:CHz;i02k=Qd0
+R6
+32
+R35
+!i10b 1
+R36
+R43
+R44
+!i113 1
+R11
+R12
+Edivider_4bit
+R31
+R24
+R1
+R2
+!i122 173
+R3
+Z45 8C:/Users/62822/OneDrive/Documents/divider_7segment/divider_4bit.vhd
+Z46 FC:/Users/62822/OneDrive/Documents/divider_7segment/divider_4bit.vhd
+l0
+Z47 L25 1
+VE1S]hmz98Wo=Lm`:7]2<l0
+!s100 XU>V2UI]?Mb9V<0L=E=AS2
+R6
+32
+R35
+!i10b 1
+R36
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/62822/OneDrive/Documents/divider_7segment/divider_4bit.vhd|
+Z49 !s107 C:/Users/62822/OneDrive/Documents/divider_7segment/divider_4bit.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R24
+R1
+R2
+DEx4 work 12 divider_4bit 0 22 E1S]hmz98Wo=Lm`:7]2<l0
+!i122 173
+l99
+L36 153
+VZCJn2U@bC`dz]Yf]>ao?S0
+!s100 8LQKT:jn40]D@5@G_`TV?1
+R6
+32
+R35
+!i10b 1
+R36
+R48
+R49
+!i113 1
+R11
+R12
+Edivider_4bit_tb
+R31
+R24
+R1
+R2
+!i122 174
+R3
+Z50 8C:/Users/62822/OneDrive/Documents/divider_7segment/divider_4bit_tb.vhd
+Z51 FC:/Users/62822/OneDrive/Documents/divider_7segment/divider_4bit_tb.vhd
+l0
+R47
+VIZZlWU^:ffTzoeoZHlhT91
+!s100 KdkZ7M`Jjnzif8LXCD:W83
+R6
+32
+R35
+!i10b 1
+R36
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/62822/OneDrive/Documents/divider_7segment/divider_4bit_tb.vhd|
+Z53 !s107 C:/Users/62822/OneDrive/Documents/divider_7segment/divider_4bit_tb.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R24
+R1
+R2
+DEx4 work 15 divider_4bit_tb 0 22 IZZlWU^:ffTzoeoZHlhT91
+!i122 174
+l50
+L29 98
+Vh2@RWYQQ_Xb08e@5f00<A3
+!s100 ^1O8]oHnU^6b;b[PWN=0O3
+R6
+32
+R35
+!i10b 1
+R36
+R52
+R53
+!i113 1
+R11
+R12
+Edivider_with_7segment
+Z54 w1731464760
+R24
+R1
+R2
+!i122 175
+R3
+Z55 8C:/Users/62822/OneDrive/Documents/divider_7segment/divider_4bit_with_7segment.vhd
+Z56 FC:/Users/62822/OneDrive/Documents/divider_7segment/divider_4bit_with_7segment.vhd
+l0
+L7 1
+V<i<4K]Dk@H2?:>[JJ1of30
+!s100 cH<FW9>6Q]5SVQNC`Il=71
+R6
+32
+Z57 !s110 1731465697
+!i10b 1
+R36
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/62822/OneDrive/Documents/divider_7segment/divider_4bit_with_7segment.vhd|
+Z59 !s107 C:/Users/62822/OneDrive/Documents/divider_7segment/divider_4bit_with_7segment.vhd|
+!i113 1
+R11
+R12
+Artl
+R24
+R1
+R2
+DEx4 work 21 divider_with_7segment 0 22 <i<4K]Dk@H2?:>[JJ1of30
+!i122 175
+l63
+L23 62
+V`Sd1B037<G0jb7z6R_I2W0
+!s100 >?4B0FmlX5oooGHe?`A3b3
+R6
+32
+R57
+!i10b 1
+R36
+R58
+R59
+!i113 1
+R11
+R12
+Emux2to1_4bit
+Z60 w1731429228
+R1
+R2
+!i122 176
+R3
+Z61 8C:/Users/62822/OneDrive/Documents/divider_7segment/MUX2to1_4bit.vhd
+Z62 FC:/Users/62822/OneDrive/Documents/divider_7segment/MUX2to1_4bit.vhd
+l0
+R34
+VL:c7h1O;5JkeDJkcjFQ9=3
+!s100 219bO?7US<WeJB><?gThb3
+R6
+32
+R57
+!i10b 1
+Z63 !s108 1731465697.000000
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/62822/OneDrive/Documents/divider_7segment/MUX2to1_4bit.vhd|
+Z65 !s107 C:/Users/62822/OneDrive/Documents/divider_7segment/MUX2to1_4bit.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+DEx4 work 12 mux2to1_4bit 0 22 L:c7h1O;5JkeDJkcjFQ9=3
+!i122 176
+l32
+L31 11
+V:1WDOk8Ob5]7eBcR5OA3R3
+!s100 =ICDBiX2iFgdz9FNh:SDf1
+R6
+32
+R57
+!i10b 1
+R63
+R64
+R65
+!i113 1
+R11
+R12
+Eregister_4bit
+R31
+R1
+R2
+!i122 177
+R3
+Z66 8C:/Users/62822/OneDrive/Documents/divider_7segment/register_4bit.vhd
+Z67 FC:/Users/62822/OneDrive/Documents/divider_7segment/register_4bit.vhd
+l0
+R42
+VR@0<k_<BRezGVf4ZQY5V_0
+!s100 M1S;]0a59`>a7M[hh2TY72
+R6
+32
+R57
+!i10b 1
+R63
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/62822/OneDrive/Documents/divider_7segment/register_4bit.vhd|
+Z69 !s107 C:/Users/62822/OneDrive/Documents/divider_7segment/register_4bit.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R1
+R2
+DEx4 work 13 register_4bit 0 22 R@0<k_<BRezGVf4ZQY5V_0
+!i122 177
+l38
+L35 19
+Vd4kf1PZFQfP?WF3E0Gng[3
+!s100 7?_3aiRZ^^GzChI]a>=En0
+R6
+32
+R57
+!i10b 1
+R63
+R68
+R69
+!i113 1
+R11
+R12
+Esubtractor_4bit
+R31
+R24
+R1
+R2
+!i122 178
+R3
+Z70 8C:/Users/62822/OneDrive/Documents/divider_7segment/subtractor_4bit.vhd
+Z71 FC:/Users/62822/OneDrive/Documents/divider_7segment/subtractor_4bit.vhd
+l0
+R34
+V6E`:WH6:j<[P7H;3ak2PH3
+!s100 d7`EY_meZXJBKAook@J9h2
+R6
+32
+R57
+!i10b 1
+R63
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/62822/OneDrive/Documents/divider_7segment/subtractor_4bit.vhd|
+Z73 !s107 C:/Users/62822/OneDrive/Documents/divider_7segment/subtractor_4bit.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R24
+R1
+R2
+DEx4 work 15 subtractor_4bit 0 22 6E`:WH6:j<[P7H;3ak2PH3
+!i122 178
+l31
+R39
+Vli;RgzbDNTJF2NV4lk<@V3
+!s100 nWL2^7=<=nSj@8hC^]d6b2
+R6
+32
+R57
+!i10b 1
+R63
+R72
+R73
+!i113 1
+R11
+R12
+Etb_divider_4bit
+Z74 w1731455323
+R24
+R1
+R2
+!i122 83
+R3
+Z75 8C:/Users/62822/OneDrive/Documents/divider_7segment/divider_4bit_with_7segment_tb.vhd
+Z76 FC:/Users/62822/OneDrive/Documents/divider_7segment/divider_4bit_with_7segment_tb.vhd
+l0
+L5 1
+VbJ8YIm5e@?6hnDkjgOYiB1
+!s100 NIz@clVo3o:df2?cRMSma1
+R6
+32
+Z77 !s110 1731455336
+!i10b 1
+Z78 !s108 1731455336.000000
+Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/62822/OneDrive/Documents/divider_7segment/divider_4bit_with_7segment_tb.vhd|
+Z80 !s107 C:/Users/62822/OneDrive/Documents/divider_7segment/divider_4bit_with_7segment_tb.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R24
+R1
+R2
+DEx4 work 15 tb_divider_4bit 0 22 bJ8YIm5e@?6hnDkjgOYiB1
+!i122 83
+l29
+L8 90
+V1DDfmDLmmCU2YnA059j751
+!s100 BZzRV0RZcRYWcJb:1d6DJ1
+R6
+32
+R77
+!i10b 1
+R78
+R79
+R80
+!i113 1
+R11
+R12
+Etb_divider_with_7segment
+Z81 w1731465691
+R24
+R1
+R2
+!i122 179
+R3
+R75
+R76
+l0
+R47
+Vm[;K[=f?C>]L_dA8RUjD43
+!s100 cWP5@hD=QV2mFe5`WWdFM2
+R6
+32
+R7
+!i10b 1
+R8
+R79
+R80
+!i113 1
+R11
+R12
+Abehavior
+R24
+R1
+R2
+DEx4 work 24 tb_divider_with_7segment 0 22 m[;K[=f?C>]L_dA8RUjD43
+!i122 179
+l60
+L31 140
+VRH08Amd2>:<RnPdH?nIVf0
+!s100 l4PSQX>GjT7JjHA`iA_Di3
+R6
+32
+R7
+!i10b 1
+R8
+R79
+R80
+!i113 1
+R11
+R12

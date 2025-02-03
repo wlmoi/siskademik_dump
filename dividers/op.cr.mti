@@ -1,0 +1,62 @@
+C:/Users/62822/OneDrive/Documents/dividers/subtractor_4bit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/62822/OneDrive/Documents/dividers/subtractor_4bit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity subtractor_4bit
+-- Compiling architecture behavior of subtractor_4bit
+
+} {} {}} C:/Users/62822/OneDrive/Documents/dividers/register_4bit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/62822/OneDrive/Documents/dividers/register_4bit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register_4bit
+-- Compiling architecture behavior of register_4bit
+
+} {} {}} C:/Users/62822/OneDrive/Documents/dividers/comparator_less_4bit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/62822/OneDrive/Documents/dividers/comparator_less_4bit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity comparator_less_4bit
+-- Compiling architecture behavior of comparator_less_4bit
+
+} {} {}} C:/Users/62822/OneDrive/Documents/dividers/divider_4bit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/62822/OneDrive/Documents/dividers/divider_4bit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity divider_4bit
+-- Compiling architecture behavior of divider_4bit
+
+} {} {}} C:/Users/62822/OneDrive/Documents/dividers/MUX2to1_4bit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/62822/OneDrive/Documents/dividers/MUX2to1_4bit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2to1_4bit
+-- Compiling architecture behavior of mux2to1_4bit
+
+} {} {}} C:/Users/62822/OneDrive/Documents/dividers/divider_4bit_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/62822/OneDrive/Documents/dividers/divider_4bit_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity divider_4bit_tb
+-- Compiling architecture behavior of divider_4bit_tb
+
+} {} {}} C:/Users/62822/OneDrive/Documents/dividers/counter_4bit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/62822/OneDrive/Documents/dividers/counter_4bit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity counter_4bit
+-- Compiling architecture behavior of counter_4bit
+
+} {} {}}

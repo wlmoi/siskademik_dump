@@ -1,0 +1,308 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/MODELSIM
+Ecomparator_less_4bit
+Z0 w1731428255
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+Z4 dC:/Users/62822/OneDrive/Documents/dividers
+Z5 8C:/Users/62822/OneDrive/Documents/dividers/comparator_less_4bit.vhd
+Z6 FC:/Users/62822/OneDrive/Documents/dividers/comparator_less_4bit.vhd
+l0
+Z7 L20 1
+VbBNVMK[P[L3Cc5=4E7H5>3
+!s100 QiUPL4j=9iN8U^O7=]3>_3
+Z8 OV;C;2020.1;71
+32
+Z9 !s110 1731429165
+!i10b 1
+Z10 !s108 1731429165.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/62822/OneDrive/Documents/dividers/comparator_less_4bit.vhd|
+Z12 !s107 C:/Users/62822/OneDrive/Documents/dividers/comparator_less_4bit.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Abehavior
+R1
+R2
+R3
+DEx4 work 20 comparator_less_4bit 0 22 bBNVMK[P[L3Cc5=4E7H5>3
+!i122 0
+l31
+Z15 L30 4
+VR^l>`I6mBnh^XkRiF^4fL0
+!s100 6GD[jf_:Q1l1;iWF=<J=_1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ecounter_4bit
+R0
+R1
+R2
+R3
+!i122 1
+R4
+Z16 8C:/Users/62822/OneDrive/Documents/dividers/counter_4bit.vhd
+Z17 FC:/Users/62822/OneDrive/Documents/dividers/counter_4bit.vhd
+l0
+Z18 L22 1
+V6WSHA7Ca^UOEKQJ@MXiXI0
+!s100 8a<fLhOJDjdi`1m[?WT;I0
+R8
+32
+Z19 !s110 1731429166
+!i10b 1
+Z20 !s108 1731429166.000000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/62822/OneDrive/Documents/dividers/counter_4bit.vhd|
+Z22 !s107 C:/Users/62822/OneDrive/Documents/dividers/counter_4bit.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R1
+R2
+R3
+DEx4 work 12 counter_4bit 0 22 6WSHA7Ca^UOEKQJ@MXiXI0
+!i122 1
+l35
+L32 19
+V=me51S0n`_43_KT1=Mg<L3
+!s100 =?Uj`_AV7:CHz;i02k=Qd0
+R8
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R13
+R14
+Edivider_4bit
+R0
+R1
+R2
+R3
+!i122 2
+R4
+Z23 8C:/Users/62822/OneDrive/Documents/dividers/divider_4bit.vhd
+Z24 FC:/Users/62822/OneDrive/Documents/dividers/divider_4bit.vhd
+l0
+Z25 L25 1
+VE1S]hmz98Wo=Lm`:7]2<l0
+!s100 XU>V2UI]?Mb9V<0L=E=AS2
+R8
+32
+R19
+!i10b 1
+R20
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/62822/OneDrive/Documents/dividers/divider_4bit.vhd|
+Z27 !s107 C:/Users/62822/OneDrive/Documents/dividers/divider_4bit.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R1
+R2
+R3
+DEx4 work 12 divider_4bit 0 22 E1S]hmz98Wo=Lm`:7]2<l0
+!i122 2
+l99
+L36 153
+VZCJn2U@bC`dz]Yf]>ao?S0
+!s100 8LQKT:jn40]D@5@G_`TV?1
+R8
+32
+R19
+!i10b 1
+R20
+R26
+R27
+!i113 1
+R13
+R14
+Edivider_4bit_tb
+R0
+R1
+R2
+R3
+!i122 3
+R4
+Z28 8C:/Users/62822/OneDrive/Documents/dividers/divider_4bit_tb.vhd
+Z29 FC:/Users/62822/OneDrive/Documents/dividers/divider_4bit_tb.vhd
+l0
+R25
+VIZZlWU^:ffTzoeoZHlhT91
+!s100 KdkZ7M`Jjnzif8LXCD:W83
+R8
+32
+R19
+!i10b 1
+R20
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/62822/OneDrive/Documents/dividers/divider_4bit_tb.vhd|
+Z31 !s107 C:/Users/62822/OneDrive/Documents/dividers/divider_4bit_tb.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R1
+R2
+R3
+DEx4 work 15 divider_4bit_tb 0 22 IZZlWU^:ffTzoeoZHlhT91
+!i122 3
+l50
+L29 98
+Vh2@RWYQQ_Xb08e@5f00<A3
+!s100 ^1O8]oHnU^6b;b[PWN=0O3
+R8
+32
+R19
+!i10b 1
+R20
+R30
+R31
+!i113 1
+R13
+R14
+Emux2to1_4bit
+Z32 w1731428256
+R2
+R3
+!i122 4
+R4
+Z33 8C:/Users/62822/OneDrive/Documents/dividers/MUX2to1_4bit.vhd
+Z34 FC:/Users/62822/OneDrive/Documents/dividers/MUX2to1_4bit.vhd
+l0
+R7
+VL:c7h1O;5JkeDJkcjFQ9=3
+!s100 219bO?7US<WeJB><?gThb3
+R8
+32
+R19
+!i10b 1
+R20
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/62822/OneDrive/Documents/dividers/MUX2to1_4bit.vhd|
+Z36 !s107 C:/Users/62822/OneDrive/Documents/dividers/MUX2to1_4bit.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R2
+R3
+DEx4 work 12 mux2to1_4bit 0 22 L:c7h1O;5JkeDJkcjFQ9=3
+!i122 4
+l32
+L31 11
+V:1WDOk8Ob5]7eBcR5OA3R3
+!s100 =ICDBiX2iFgdz9FNh:SDf1
+R8
+32
+R19
+!i10b 1
+R20
+R35
+R36
+!i113 1
+R13
+R14
+Eregister_4bit
+R32
+R2
+R3
+!i122 5
+R4
+Z37 8C:/Users/62822/OneDrive/Documents/dividers/register_4bit.vhd
+Z38 FC:/Users/62822/OneDrive/Documents/dividers/register_4bit.vhd
+l0
+R18
+VR@0<k_<BRezGVf4ZQY5V_0
+!s100 M1S;]0a59`>a7M[hh2TY72
+R8
+32
+Z39 !s110 1731429167
+!i10b 1
+R20
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/62822/OneDrive/Documents/dividers/register_4bit.vhd|
+Z41 !s107 C:/Users/62822/OneDrive/Documents/dividers/register_4bit.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R2
+R3
+DEx4 work 13 register_4bit 0 22 R@0<k_<BRezGVf4ZQY5V_0
+!i122 5
+l38
+L35 19
+Vd4kf1PZFQfP?WF3E0Gng[3
+!s100 7?_3aiRZ^^GzChI]a>=En0
+R8
+32
+R39
+!i10b 1
+R20
+R40
+R41
+!i113 1
+R13
+R14
+Esubtractor_4bit
+R0
+R1
+R2
+R3
+!i122 6
+R4
+Z42 8C:/Users/62822/OneDrive/Documents/dividers/subtractor_4bit.vhd
+Z43 FC:/Users/62822/OneDrive/Documents/dividers/subtractor_4bit.vhd
+l0
+R7
+V6E`:WH6:j<[P7H;3ak2PH3
+!s100 d7`EY_meZXJBKAook@J9h2
+R8
+32
+R39
+!i10b 1
+Z44 !s108 1731429167.000000
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/62822/OneDrive/Documents/dividers/subtractor_4bit.vhd|
+!s107 C:/Users/62822/OneDrive/Documents/dividers/subtractor_4bit.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R1
+R2
+R3
+DEx4 work 15 subtractor_4bit 0 22 6E`:WH6:j<[P7H;3ak2PH3
+!i122 6
+l31
+R15
+Vli;RgzbDNTJF2NV4lk<@V3
+!s100 nWL2^7=<=nSj@8hC^]d6b2
+R8
+32
+R39
+!i10b 1
+R44
+R45
+Z46 !s107 C:/Users/62822/OneDrive/Documents/dividers/subtractor_4bit.vhd|
+!i113 1
+R13
+R14
