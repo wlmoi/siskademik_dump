@@ -1,0 +1,269 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ce_out",
+					"strict" : false
+				},
+				{
+					"name" : "zz",
+					"strict" : false
+				},
+				{
+					"name" : "r_cordic[0]",
+					"strict" : false
+				},
+				{
+					"name" : "r_cordic[1]",
+					"strict" : false
+				},
+				{
+					"name" : "r_cordic[2]",
+					"strict" : false
+				},
+				{
+					"name" : "r_cordic[3]",
+					"strict" : false
+				},
+				{
+					"name" : "r_cordic[4]",
+					"strict" : false
+				},
+				{
+					"name" : "r_cordic[5]",
+					"strict" : false
+				},
+				{
+					"name" : "r_cordic[6]",
+					"strict" : false
+				},
+				{
+					"name" : "r_cordic[7]",
+					"strict" : false
+				},
+				{
+					"name" : "r_cordic[8]",
+					"strict" : false
+				},
+				{
+					"name" : "r_cordic[9]",
+					"strict" : false
+				},
+				{
+					"name" : "r_cordic[10]",
+					"strict" : false
+				},
+				{
+					"name" : "r_cordic[11]",
+					"strict" : false
+				},
+				{
+					"name" : "r_cordic[12]",
+					"strict" : false
+				},
+				{
+					"name" : "r_cordic[13]",
+					"strict" : false
+				},
+				{
+					"name" : "p_cordic[1]",
+					"strict" : false
+				},
+				{
+					"name" : "p_cordic[2]",
+					"strict" : false
+				},
+				{
+					"name" : "p_cordic[3]",
+					"strict" : false
+				},
+				{
+					"name" : "p_cordic[4]",
+					"strict" : false
+				},
+				{
+					"name" : "p_cordic[5]",
+					"strict" : false
+				},
+				{
+					"name" : "p_cordic[6]",
+					"strict" : false
+				},
+				{
+					"name" : "p_cordic[7]",
+					"strict" : false
+				},
+				{
+					"name" : "p_cordic[8]",
+					"strict" : false
+				},
+				{
+					"name" : "p_cordic[9]",
+					"strict" : false
+				},
+				{
+					"name" : "p_cordic[10]",
+					"strict" : false
+				},
+				{
+					"name" : "p_cordic[11]",
+					"strict" : false
+				},
+				{
+					"name" : "p_cordic[12]",
+					"strict" : false
+				},
+				{
+					"name" : "p_cordic[13]",
+					"strict" : false
+				},
+				{
+					"name" : "x_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "x_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "x_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "x_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "x_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "x_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "x_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "x_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "x_out[8]",
+					"strict" : false
+				},
+				{
+					"name" : "x_out[9]",
+					"strict" : false
+				},
+				{
+					"name" : "x_out[10]",
+					"strict" : false
+				},
+				{
+					"name" : "x_out[11]",
+					"strict" : false
+				},
+				{
+					"name" : "x_out[12]",
+					"strict" : false
+				},
+				{
+					"name" : "x_out[13]",
+					"strict" : false
+				},
+				{
+					"name" : "clk_enable",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset_x",
+					"strict" : false
+				},
+				{
+					"name" : "cordic_on",
+					"strict" : false
+				},
+				{
+					"name" : "x_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "x_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "x_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "x_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "x_in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "x_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "x_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "x_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "x_in[8]",
+					"strict" : false
+				},
+				{
+					"name" : "y_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "y_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "y_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "y_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "y_in[8]",
+					"strict" : false
+				},
+				{
+					"name" : "y_in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "y_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "y_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "y_in[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
