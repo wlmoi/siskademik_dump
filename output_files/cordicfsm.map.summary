@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Dec 22 20:43:54 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : cordicfsm
+Top-level Entity Name : cordicfsm_fixpt
+Family : Cyclone IV E
+Total logic elements : 431
+    Total combinational functions : 400
+    Dedicated logic registers : 138
+Total registers : 138
+Total pins : 80
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Dec 22 20:44:08 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : cordicfsm
+Top-level Entity Name : cordicfsm_fixpt
+Family : Cyclone IV E
+Device : EP4CE6F17C6
+Timing Models : Final
+Total logic elements : 420 / 6,272 ( 7 % )
+    Total combinational functions : 401 / 6,272 ( 6 % )
+    Dedicated logic registers : 138 / 6,272 ( 2 % )
+Total registers : 138
+Total pins : 80 / 180 ( 44 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

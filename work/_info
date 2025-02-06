@@ -1,0 +1,177 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/MODELSIM
+Ecordicfsm_fixpt
+Z0 w1734872292
+Z1 DPx4 work 19 cordicfsm_fixpt_pac 0 22 >S012h9cFig3n=7L[Z3<J1
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 6
+Z5 dD:/Cordic/cordicfsm/hdlsrc
+Z6 8D:/Cordic/cordicfsm/hdlsrc/cordicfsm_fixpt.vhd
+Z7 FD:/Cordic/cordicfsm/hdlsrc/cordicfsm_fixpt.vhd
+l0
+L46 1
+VNJ?]Si5>S[=Ag@<a8_<Fo2
+!s100 YzSfXbU]IifAYC9<DaTi`1
+Z8 OV;C;2020.1;71
+32
+Z9 !s110 1734873633
+!i10b 1
+Z10 !s108 1734873633.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Cordic/cordicfsm/hdlsrc/cordicfsm_fixpt.vhd|
+Z12 !s107 D:/Cordic/cordicfsm/hdlsrc/cordicfsm_fixpt.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Artl
+R1
+R2
+R3
+R4
+Z15 DEx4 work 15 cordicfsm_fixpt 0 22 NJ?]Si5>S[=Ag@<a8_<Fo2
+!i122 6
+l200
+L63 781
+V;U`kTblO<NH]2JI8A;Y=T1
+!s100 SIJhK6f8^0TP<<W<_?:9G2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Pcordicfsm_fixpt_pac
+R2
+R3
+R4
+!i122 7
+R0
+R5
+8D:/Cordic/cordicfsm/hdlsrc/cordicfsm_fixpt_pac.vhd
+FD:/Cordic/cordicfsm/hdlsrc/cordicfsm_fixpt_pac.vhd
+l0
+L16 1
+V>S012h9cFig3n=7L[Z3<J1
+!s100 5h[fo_EVoTFSoH^ahWGh02
+R8
+32
+R9
+!i10b 1
+R10
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Cordic/cordicfsm/hdlsrc/cordicfsm_fixpt_pac.vhd|
+!s107 D:/Cordic/cordicfsm/hdlsrc/cordicfsm_fixpt_pac.vhd|
+!i113 1
+R13
+R14
+Ecordicfsm_fixpt_tb
+Z16 w1734872421
+Z17 DPx4 work 22 cordicfsm_fixpt_tb_pac 0 22 8MzJZd3FL];cgm3eFnnHK3
+R1
+R2
+R4
+R3
+Z18 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+!i122 8
+R5
+Z19 8D:/Cordic/cordicfsm/hdlsrc/cordicfsm_fixpt_tb.vhd
+Z20 FD:/Cordic/cordicfsm/hdlsrc/cordicfsm_fixpt_tb.vhd
+l0
+L36 1
+V^ffkB_^5=gBQZLPUCJ>Cj3
+!s100 ca>23XM=ERfK8G2382oYX3
+R8
+32
+Z21 !s110 1734873634
+!i10b 1
+Z22 !s108 1734873634.000000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Cordic/cordicfsm/hdlsrc/cordicfsm_fixpt_tb.vhd|
+Z24 !s107 D:/Cordic/cordicfsm/hdlsrc/cordicfsm_fixpt_tb.vhd|
+!i113 1
+R13
+R14
+Artl
+R15
+R17
+R1
+R2
+R4
+R3
+R18
+DEx4 work 18 cordicfsm_fixpt_tb 0 22 ^ffkB_^5=gBQZLPUCJ>Cj3
+!i122 8
+l161
+L40 705
+VG9hD2o@hJkBA:lcb1A8S=0
+!s100 ;B^oRKRFD79XfDG:IKE:h2
+R8
+32
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R13
+R14
+Pcordicfsm_fixpt_tb_pac
+R1
+R18
+R2
+R3
+R4
+!i122 9
+R16
+R5
+Z25 8D:/Cordic/cordicfsm/hdlsrc/cordicfsm_fixpt_tb_pac.vhd
+Z26 FD:/Cordic/cordicfsm/hdlsrc/cordicfsm_fixpt_tb_pac.vhd
+l0
+L22 1
+V8MzJZd3FL];cgm3eFnnHK3
+!s100 ^b8GU_X>zEmLLM6=XC19H0
+R8
+32
+b1
+R21
+!i10b 1
+R22
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Cordic/cordicfsm/hdlsrc/cordicfsm_fixpt_tb_pac.vhd|
+Z28 !s107 D:/Cordic/cordicfsm/hdlsrc/cordicfsm_fixpt_tb_pac.vhd|
+!i113 1
+R13
+R14
+Bbody
+R17
+R1
+R18
+R2
+R3
+R4
+!i122 9
+l0
+Z29 L32 1
+Z30 V43R4?JGH2L;ja5hCRnl@<3
+Z31 !s100 FoPhMDFB[CHJVd35B>znh0
+R8
+32
+R21
+!i10b 1
+R22
+R27
+R28
+!i113 1
+R13
+R14
