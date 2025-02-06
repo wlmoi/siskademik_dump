@@ -1,0 +1,99 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+
+entity cordic_polar_signed IS
+  PORT (
+    clk  : IN  STD_LOGIC;  -- System clock
+    reset: IN  STD_LOGIC;  -- Asynchronous reset
+    x_in : IN  SIGNED(10 DOWNTO 0);  -- System  x input
+    y_in : IN  SIGNED(10 DOWNTO 0);  -- System  y input
+    cordic_on : IN STD_LOGIC;  -- CORDIC activation flag
+    r_cordic : OUT SIGNED(12 DOWNTO 0);  -- Radius result
+    p_cordic : OUT SIGNED(31 DOWNTO 0);  -- Phase result
+    z : OUT STD_LOGIC  -- Completion flag
+  );
+END cordic_polar_signed;
+
+ARCHITECTURE Behavioral OF cordic_polar_signed IS
+
+
+  -- Signals for iteration
+  SIGNAL x, y, z_internal : SIGNED(31 DOWNTO 0);  -- Intermediate values
+  SIGNAL ArcTan            : SIGNED(31 DOWNTO 0);  -- Arctangent lookup
+  SIGNAL temp_x, temp_y   : SIGNED(31 DOWNTO 0);  -- Temporary variables
+  SIGNAL py, px           : SIGNED(31 DOWNTO 0);  -- Shifted values
+  SIGNAL iteration        : INTEGER RANGE 0 TO 31 := 0;  -- Iteration counter
+  SIGNAL completed        : STD_LOGIC := '0';            -- Completion flag
+
+  -- Arctangent lookup table
+  CONSTANT atan_table : SIGNED(31 DOWNTO 0) := (
+    TO_SIGNED(45_0000, 32), TO_SIGNED(26_5650, 32), TO_SIGNED(14_0362, 32),
+    TO_SIGNED(7_1250, 32), TO_SIGNED(3_5763, 32), TO_SIGNED(1_7905, 32),
+    TO_SIGNED(0_8951, 32), TO_SIGNED(0_4476, 32), TO_SIGNED(0_2238, 32),
+    TO_SIGNED(0_1119, 32), TO_SIGNED(0_0560, 32), TO_SIGNED(0_0280, 32),
+    TO_SIGNED(0_0140, 32), TO_SIGNED(0_0070, 32), TO_SIGNED(0_0035, 32),
+    TO_SIGNED(0_0018, 32), TO_SIGNED(0_0009, 32), TO_SIGNED(0_0004, 32),
+    TO_SIGNED(0_0002, 32), TO_SIGNED(0_0001, 32), TO_SIGNED(0_00005, 32),
+    TO_SIGNED(0_00003, 32), TO_SIGNED(0_00002, 32), TO_SIGNED(0_00001, 32),
+    TO_SIGNED(0_000005, 32), TO_SIGNED(0_000003, 32), TO_SIGNED(0_000002, 32),
+    TO_SIGNED(0_000001, 32), TO_SIGNED(0_0000005, 32), TO_SIGNED(0_0000003, 32),
+    TO_SIGNED(0_0000002, 32), TO_SIGNED(0_0000001, 32)
+  );
+
+
+
+
+BEGIN
+  PROCESS (clk, reset)
+  BEGIN
+    IF reset = '1' THEN
+      -- Reset state
+      x <= (OTHERS => '0');
+      y <= (OTHERS => '0');
+      z_internal <= (OTHERS => '0');
+      iteration <= 0;
+      completed <= '0';
+      z <= '0';
+    ELSIF rising_edge(clk) THEN
+      IF Cordic_on = '1' AND completed = '0' THEN
+        -- Lookup arctangent value
+        ArcTan <= atan_table(iteration);
+
+        -- Iterative process
+        IF iteration < 32 THEN
+          temp_x <= x;
+          temp_y <= y;
+
+          -- Right shift using concatenation
+          py <= "0" & y(31 DOWNTO 1);
+          px <= "0" & x(31 DOWNTO 1);
+
+          -- Rotation decision
+          IF z_internal < 0 THEN
+            z_internal <= z_internal + ArcTan;
+            x <= temp_x - py;
+            y <= temp_y + px;
+          ELSE
+            z_internal <= z_internal - ArcTan;
+            x <= temp_x + py;
+            y <= temp_y - px;
+          END IF;
+
+          iteration <= iteration + 1;
+        ELSE
+          -- Finalize results
+          r_cordic <= x * TO_SIGNED(0.607252935, 32);  -- Magnitude result with scaling
+          p_cordic <= z_internal;                      -- Angle result
+          completed <= '1';
+          z <= '1';
+        END IF;
+      ELSE
+        -- Reset when CORDIC is not active
+        z <= '0';
+        completed <= '0';
+        iteration <= 0;
+      END IF;
+    END IF;
+  END PROCESS;
+END Behavioral;
