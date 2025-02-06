@@ -1,0 +1,9 @@
+
+Warnings: 
+
+File: D:\Matlab\W_exports\cordicfsm\cordicfsm.m, line : 71, column : 18. The expression 'x_Cordic = y_in' was not executed during simulation. Consider using a more thorough testbench.
+File: D:\Matlab\W_exports\cordicfsm\cordicfsm.m, line : 72, column : 18. The expression 'y_Cordic = -x_in' was not executed during simulation. Consider using a more thorough testbench.
+File: D:\Matlab\W_exports\cordicfsm\cordicfsm.m, line : 73, column : 18. The expression 'z_Cordic = 90' was not executed during simulation. Consider using a more thorough testbench.
+File: D:\Matlab\W_exports\cordicfsm\cordicfsm.m, line : 75, column : 18. The expression 'x_Cordic = -y_in' was not executed during simulation. Consider using a more thorough testbench.
+File: D:\Matlab\W_exports\cordicfsm\cordicfsm.m, line : 76, column : 18. The expression 'y_Cordic = x_in' was not executed during simulation. Consider using a more thorough testbench.
+File: D:\Matlab\W_exports\cordicfsm\cordicfsm.m, line : 77, column : 18. The expression 'z_Cordic = -90' was not executed during simulation. Consider using a more thorough testbench.

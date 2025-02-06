@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Fixed-Point Report for cordicfsm_fixpt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+	body { font-family: monospace; }
+	h2 { font-family: Arial, Helvetica, sans-serif; color: #990000; margin-top: 50px; }
+	table,th,td { border: 1px solid black; }
+	table { margin-top: 30px; }
+	th { align: center; font-weight: bold; }
+	tr.h { background-color: #99CCFF; }
+	tr.a { background-color: #EEEEFF; }
+	tr.b { background-color: #FFFFFF; }
+	tr.c { background-color: #FFA500; }
+	tr.a td, tr.b td { border-style: none; }
+	td.left { text-align: left; }
+	td.right { text-align: right; }
+	td.center { text-align: center; }
+	td.bold { font-weight: bold; }
+	pre { padding: 0px; margin: 0px; }
+	span { font-style: italic; }
+</style>
+</head>
+<body>
+<h3>Generated on  2024-12-22 19:56:16</h3>
+<p>The following table shows fixed point instrumentation results</p>
+<h2>Fixed-Point Report <span>cordicfsm_fixpt<span></h2>
+<pre>function [Z, r_cordic, p_cordic, x_out, y_out] = cordicfsm_fixpt(Cordic_on, x_in, y_in)
+    % Mesin Keadaan Moore dengan State IDLE, START, CALCULATE, dan DONE
+
+    % Definisi state
+    fm = get_fimath();
+
+    IDLE = fi(0, 0, 1, 0, fm);
+    START = fi(1, 0, 1, 0, fm);
+    CALCULATE = fi(2, 0, 2, 0, fm);
+    DONE = fi(3, 0, 2, 0, fm);
+
+    % Menggunakan persistent untuk menyimpan status antar siklus
+    persistent curr_state x_Cordic y_Cordic z_Cordic r_Cordic phi_Cordic iter_Cordic x_out_Cordic y_out_Cordic;
+    if isempty(curr_state)
+        curr_state = fi(IDLE, 0, 2, 0, fm);
+        x_Cordic = fi(0, 0, 14, 4, fm); y_Cordic = fi(0, 1, 14, 4, fm); z_Cordic = fi(0, 0, 14, 7, fm);
+        r_Cordic = fi(0, 0, 14, 5, fm); phi_Cordic = fi(0, 0, 14, 8, fm);
+        iter_Cordic = fi(0, 0, 6, 0, fm);
+        x_out_Cordic = fi(0, 0, 14, 4, fm); y_out_Cordic = fi(0, 1, 14, 36, fm);
+    end
+
+    % Nilai keluaran awal
+    Z = false;
+    r_cordic = fi(r_Cordic, 0, 14, 5, fm);
+    p_cordic = fi(phi_Cordic, 0, 14, 8, fm);
+    x_out = fi(x_out_Cordic, 0, 14, 4, fm);
+    y_out = fi(y_out_Cordic, 1, 14, 36, fm);
+
+    % Logika mesin keadaan Moore
+    switch curr_state
+        case IDLE
+            if Cordic_on
+                curr_state(:) = START;
+            end
+
+        case START
+            iter_Cordic(:) = 0;
+            [x_Cordic(:), y_Cordic(:), z_Cordic(:)] = Cordic_init(x_in, y_in);
+            curr_state(:) = CALCULATE;
+
+        case CALCULATE
+            if iter_Cordic &lt; fi(32, 0, 6, 0, fm)
+                [x_Cordic(:), y_Cordic(:), z_Cordic(:)] = Cordic_step(x_Cordic, y_Cordic, z_Cordic, iter_Cordic);
+                iter_Cordic(:) = iter_Cordic + fi(1, 0, 1, 0, fm);
+            else
+                r_Cordic(:) = x_Cordic * fi(0.60725287, 0, 14, 14, fm); % Radius hasil (dengan gain tetap)
+                phi_Cordic(:) = z_Cordic; % Sudut akhir
+                x_out_Cordic(:) = x_Cordic;
+                y_out_Cordic(:) = y_Cordic;
+                curr_state(:) = DONE;
+            end
+
+        case DONE
+            Z(:) = true; % Menandakan selesai
+            curr_state(:) = IDLE;
+    end
+
+    % Update keluaran
+    r_cordic(:) = r_Cordic;
+    p_cordic(:) = phi_Cordic;
+    x_out(:) = x_out_Cordic;
+    y_out(:) = y_out_Cordic;
+end</pre><TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th></TR><TR class="a">
+<TD class="left">CALCULATE</TD><TD class="left">numerictype(0, 2, 0)</TD><TD class="right">2</TD><TD class="right">2</TD></TR>
+<TR class="b">
+<TD class="left">Cordic_on</TD><TD class="left">numerictype(0, 1, 0)</TD><TD class="right">0</TD><TD class="right">1</TD></TR>
+<TR class="a">
+<TD class="left">DONE</TD><TD class="left">numerictype(0, 2, 0)</TD><TD class="right">3</TD><TD class="right">3</TD></TR>
+<TR class="b">
+<TD class="left">IDLE</TD><TD class="left">numerictype(0, 1, 0)</TD><TD class="right">0</TD><TD class="right">0</TD></TR>
+<TR class="a">
+<TD class="left">START</TD><TD class="left">numerictype(0, 1, 0)</TD><TD class="right">1</TD><TD class="right">1</TD></TR>
+<TR class="b">
+<TD class="left">Z</TD><TD class="left">logical</TD><TD class="right">0</TD><TD class="right">1</TD></TR>
+<TR class="a">
+<TD class="left">curr_state</TD><TD class="left">numerictype(0, 2, 0)</TD><TD class="right">0</TD><TD class="right">3</TD></TR>
+<TR class="b">
+<TD class="left">iter_Cordic</TD><TD class="left">numerictype(0, 6, 0)</TD><TD class="right">0</TD><TD class="right">32</TD></TR>
+<TR class="a">
+<TD class="left">p_cordic</TD><TD class="left">numerictype(0, 14, 8)</TD><TD class="right">0</TD><TD class="right">53.1015625</TD></TR>
+<TR class="b">
+<TD class="left">phi_Cordic</TD><TD class="left">numerictype(0, 14, 8)</TD><TD class="right">0</TD><TD class="right">53.1015625</TD></TR>
+<TR class="a">
+<TD class="left">r_Cordic</TD><TD class="left">numerictype(0, 14, 5)</TD><TD class="right">0</TD><TD class="right">500.8125</TD></TR>
+<TR class="b">
+<TD class="left">r_cordic</TD><TD class="left">numerictype(0, 14, 5)</TD><TD class="right">0</TD><TD class="right">500.8125</TD></TR>
+<TR class="a">
+<TD class="left">x_Cordic</TD><TD class="left">numerictype(0, 14, 4)</TD><TD class="right">0</TD><TD class="right">824.75</TD></TR>
+<TR class="b">
+<TD class="left">x_in</TD><TD class="left">numerictype(0, 9, 0)</TD><TD class="right">300</TD><TD class="right">300</TD></TR>
+<TR class="a">
+<TD class="left">x_out</TD><TD class="left">numerictype(0, 14, 4)</TD><TD class="right">0</TD><TD class="right">824.75</TD></TR>
+<TR class="b">
+<TD class="left">x_out_Cordic</TD><TD class="left">numerictype(0, 14, 4)</TD><TD class="right">0</TD><TD class="right">824.75</TD></TR>
+<TR class="a">
+<TD class="left">y_Cordic</TD><TD class="left">numerictype(1, 14, 4)</TD><TD class="right">-250</TD><TD class="right">400</TD></TR>
+<TR class="b">
+<TD class="left">y_in</TD><TD class="left">numerictype(0, 9, 0)</TD><TD class="right">400</TD><TD class="right">400</TD></TR>
+<TR class="a">
+<TD class="left">y_out</TD><TD class="left">numerictype(1, 14, 36)</TD><TD class="right">0</TD><TD class="right">0</TD></TR>
+<TR class="b">
+<TD class="left">y_out_Cordic</TD><TD class="left">numerictype(1, 14, 36)</TD><TD class="right">0</TD><TD class="right">0</TD></TR>
+<TR class="a">
+<TD class="left">z_Cordic</TD><TD class="left">numerictype(0, 14, 7)</TD><TD class="right">0</TD><TD class="right">71.5625</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>Cordic_init<span></h2>
+<pre>function [x_Cordic, y_Cordic, z_Cordic] = Cordic_init(x_in, y_in)
+    fm = get_fimath();
+
+    if x_in &gt;= fi(0, 0, 1, 0, fm)
+        x_Cordic = fi(x_in, 0, 9, 0, fm);
+        y_Cordic = fi(y_in, 0, 9, 0, fm);
+        z_Cordic = fi(0, 0, 1, 0, fm);
+    elseif y_in &gt;= fi(0, 0, 1, 0, fm)
+        %F2F: No information found for converting the following block of code
+        %F2F: Start block
+        x_Cordic = fi(y_in, 0, 9, 0, fm);
+        y_Cordic = fi(fi_uminus(x_in), 0, 9, 0, fm);
+        z_Cordic = fi(90, 0, 1, 0, fm);
+        %F2F: End block
+    else
+        %F2F: No information found for converting the following block of code
+        %F2F: Start block
+        x_Cordic = fi(fi_uminus(y_in), 0, 9, 0, fm);
+        y_Cordic = fi(x_in, 0, 9, 0, fm);
+        z_Cordic = fi(-90, 0, 1, 0, fm);
+        %F2F: End block
+    end
+end</pre><TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th></TR><TR class="a">
+<TD class="left">x_Cordic</TD><TD class="left">numerictype(0, 9, 0)</TD><TD class="right">300</TD><TD class="right">300</TD></TR>
+<TR class="b">
+<TD class="left">x_in</TD><TD class="left">numerictype(0, 9, 0)</TD><TD class="right">300</TD><TD class="right">300</TD></TR>
+<TR class="a">
+<TD class="left">y_Cordic</TD><TD class="left">numerictype(0, 9, 0)</TD><TD class="right">400</TD><TD class="right">400</TD></TR>
+<TR class="b">
+<TD class="left">y_in</TD><TD class="left">numerictype(0, 9, 0)</TD><TD class="right">400</TD><TD class="right">400</TD></TR>
+<TR class="a">
+<TD class="left">z_Cordic</TD><TD class="left">numerictype(0, 1, 0)</TD><TD class="right">0</TD><TD class="right">0</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>Cordic_step<span></h2>
+<pre>function [x_next_Cordic, y_next_Cordic, z_next_Cordic] = Cordic_step(x_Cordic, y_Cordic, z_Cordic, iter_Cordic)
+    fm = get_fimath();
+
+    Cordic_angles = fi([ ...
+        45.0000, 26.5651, 14.0362, 7.1250, 3.5763, ...
+        1.7899, 0.8952, 0.4476, 0.2238, 0.1119, ...
+        0.0560, 0.0280, 0.0140, 0.0070, 0.0035, ...
+        0.0017, 0.0009, 0.0004, 0.0002, 0.0001, ...
+        0.00005, 0.00002, 0.00001, 0.000005, ...
+        0.000002, 0.000001, 0.0000005, 0.0000002, ...
+        0.0000001, 0.00000005, 0.00000002, 0.00000001 ...
+    ], 0, 14, 8, fm);
+
+    if y_Cordic &gt;= fi(0, 0, 1, 0, fm)
+        x_next_Cordic = fi(x_Cordic + bitsra(y_Cordic, fi_toint(iter_Cordic)), 0, 14, 4, fm);
+        y_next_Cordic = fi(y_Cordic - bitsra(x_Cordic, fi_toint(iter_Cordic)), 1, 14, 5, fm);
+        z_next_Cordic = fi(z_Cordic + Cordic_angles(iter_Cordic+fi(1, 0, 1, 0, fm)), 0, 14, 7, fm);
+    else
+        x_next_Cordic = fi(x_Cordic - bitsra(y_Cordic, fi_toint(iter_Cordic)), 0, 14, 4, fm);
+        y_next_Cordic = fi(y_Cordic + bitsra(x_Cordic, fi_toint(iter_Cordic)), 1, 14, 5, fm);
+        z_next_Cordic = fi(z_Cordic - Cordic_angles(iter_Cordic+fi(1, 0, 1, 0, fm)), 0, 14, 7, fm);
+    end
+end</pre><TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th></TR><TR class="a">
+<TD class="left">Cordic_angles</TD><TD class="left">numerictype(0, 14, 8) 1 x 32 </TD><TD class="right">0</TD><TD class="right">45</TD></TR>
+<TR class="b">
+<TD class="left">iter_Cordic</TD><TD class="left">numerictype(0, 6, 0)</TD><TD class="right">0</TD><TD class="right">31</TD></TR>
+<TR class="a">
+<TD class="left">x_Cordic</TD><TD class="left">numerictype(0, 14, 4)</TD><TD class="right">300</TD><TD class="right">824.6875</TD></TR>
+<TR class="b">
+<TD class="left">x_next_Cordic</TD><TD class="left">numerictype(0, 14, 4)</TD><TD class="right">700</TD><TD class="right">824.75</TD></TR>
+<TR class="a">
+<TD class="left">y_Cordic</TD><TD class="left">numerictype(1, 14, 4)</TD><TD class="right">-250</TD><TD class="right">400</TD></TR>
+<TR class="b">
+<TD class="left">y_next_Cordic</TD><TD class="left">numerictype(1, 14, 5)</TD><TD class="right">-250</TD><TD class="right">100</TD></TR>
+<TR class="a">
+<TD class="left">z_Cordic</TD><TD class="left">numerictype(0, 14, 7)</TD><TD class="right">0</TD><TD class="right">71.5625</TD></TR>
+<TR class="b">
+<TD class="left">z_next_Cordic</TD><TD class="left">numerictype(0, 14, 7)</TD><TD class="right">45</TD><TD class="right">71.5625</TD></TR>
+</TABLE>
+
+</body>
+</html>
